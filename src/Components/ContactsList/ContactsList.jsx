@@ -2,7 +2,7 @@ import React from 'react';
 // import { connect } from 'react-redux';
 import { useSelector, useDispatch } from 'react-redux';
 import Button from '../Button/Button';
-import { deleteContact } from '../../redux/contacts/contacts-actions';
+import { deleteContact } from '../../redux/contacts/contacts-operations';
 import s from '../ContactsList/ContactsList.module.css';
 // import { v4 as unId } from "uuid";
 

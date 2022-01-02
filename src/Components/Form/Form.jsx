@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Button from '../Button/Button';
 import { connect, useSelector } from 'react-redux';
-import { addContact } from '../../redux/contacts/contacts-actions';
+import { addContact } from '../../redux/contacts/contacts-operations';
 import s from '../Form/Form.module.css';
 
 function Form({ onSubmit }) {
@@ -83,7 +83,7 @@ function Form({ onSubmit }) {
 }
 // console.log(addContact());
 const mapDispatchToProps = dispatch => ({
-  onSubmit: value => dispatch(addContact(value)),
+  onSubmit: ({ name, number }) => dispatch(addContact({ name, number })),
 });
 
 export default connect(null, mapDispatchToProps)(Form);

@@ -1,4 +1,5 @@
 import React from 'react';
+import s from '../RegisterView/RegisterView.module.css';
 
 function RegisterView() {
   return (
@@ -6,14 +7,12 @@ function RegisterView() {
       <form
         //   onSubmit={handleSubmit}
         autoComplete="off"
-        //   className={s.SignupView__form}
+        className={s.form}
       >
-        <label
-        // className={s.SignupView__item}
-        >
+        <label className={s.label}>
           Name
           <input
-            //   className={s.SignupView__input}
+            className={s.input}
             type="text"
             name="name"
             //   value={name}
@@ -21,12 +20,10 @@ function RegisterView() {
           />
         </label>
 
-        <label
-        // className={s.SignupView__item}
-        >
+        <label className={s.label}>
           E-mail
           <input
-            //   className={s.SignupView__input}
+            className={s.input}
             type="email"
             name="email"
             //   value={email}
@@ -34,12 +31,10 @@ function RegisterView() {
           />
         </label>
 
-        <label
-        // className={s.SignupView__item}
-        >
+        <label className={s.label}>
           Password
           <input
-            //   className={s.SignupView__input}
+            className={s.input}
             type="password"
             name="password"
             //   value={password}

@@ -1,4 +1,5 @@
 import React from 'react';
+import s from '../LoginView/LoginView.module.css';
 
 function LoginView() {
   return (
@@ -6,14 +7,12 @@ function LoginView() {
       <form
         //   onSubmit={handleSubmit}
         autoComplete="off"
-        //   className={style.LoginView__form}
+        className={s.form}
       >
-        <label
-        // className={s.SignupView__item}
-        >
+        <label className={s.label}>
           E-mail
           <input
-            //   className={s.SignupView__input}
+            className={s.input}
             type="email"
             name="email"
             //   value={email}
@@ -21,12 +20,10 @@ function LoginView() {
           />
         </label>
 
-        <label
-        // className={s.SignupView__item}
-        >
+        <label className={s.label}>
           Password
           <input
-            //   className={s.SignupView__input}
+            className={s.input}
             type="password"
             name="password"
             //   value={password}

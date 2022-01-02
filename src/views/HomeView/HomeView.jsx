@@ -5,7 +5,7 @@ function HomeView() {
     <>
       <h1>
         Loading... <br />
-        your contacts
+        your phonebook
       </h1>
     </>
   );

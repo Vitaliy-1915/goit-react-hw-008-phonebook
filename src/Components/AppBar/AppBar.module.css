@@ -1,6 +1,7 @@
 .AppBar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   list-style: none;
   border-bottom: solid 1px;
+  align-items: center;
 }
