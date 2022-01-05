@@ -32,13 +32,12 @@ function Form({ onSubmit }) {
   );
 
   const handleSubmit = e => {
+    e.preventDefault();
     if (findContacts) {
       alert(`${name} is already in contacts`);
+      reset();
     } else {
-      e.preventDefault();
-
       onSubmit({ name, number });
-
       reset();
     }
   };

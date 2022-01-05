@@ -8,24 +8,29 @@ import {
   RequireAuth,
   GeneralAccess,
 } from './Components/AppBar/UserMenu/CheckAccess';
+import { lazy } from 'react';
 import AppBar from './Components/AppBar/AppBar';
-import HomeView from './views/HomeView/HomeView';
-import ContactsView from './views/ContactsView/ContactsView';
-import RegisterView from './views/RegisterView/RegisterView';
-import LoginView from './views/LoginView/LoginView';
+// import HomeView from './views/HomeView/HomeView';
+// import ContactsView from './views/ContactsView/ContactsView';
+// import RegisterView from './views/RegisterView/RegisterView';
+// import LoginView from './views/LoginView/LoginView';
 
-// const HomeView = lazy(() =>
-//   import('views/HomeView' /*webpackChunkName: "home-view" */),
-// );
-// const LoginView = lazy(() =>
-//   import('views/LoginView' /*webpackChunkName: "login-view" */),
-// );
-// const ContactsView = lazy(() =>
-//   import('views/ContactsView' /*webpackChunkName: "contacts-view" */),
-// );
-// const RegisterView = lazy(() =>
-//   import('views/RegisterView' /*webpackChunkName: "register-view" */),
-// );
+const HomeView = lazy(() =>
+  import('./views/HomeView/HomeView' /*webpackChunkName: "home-view" */),
+);
+const LoginView = lazy(() =>
+  import('./views/LoginView/LoginView' /*webpackChunkName: "login-view" */),
+);
+const ContactsView = lazy(() =>
+  import(
+    './views/ContactsView/ContactsView' /*webpackChunkName: "contacts-view" */
+  ),
+);
+const RegisterView = lazy(() =>
+  import(
+    './views/RegisterView/RegisterView' /*webpackChunkName: "register-view" */
+  ),
+);
 
 function App() {
   const dispatch = useDispatch();
